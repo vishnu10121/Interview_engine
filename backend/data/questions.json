@@ -1,0 +1,56 @@
+{
+  "Software Engineer": {
+    "easy": [
+      {"id": "SE_E1", "text": "Tell me about your programming experience and favorite technologies."},
+      {"id": "SE_E2", "text": "Describe a recent project you worked on. What was your role?"},
+      {"id": "SE_E3", "text": "How do you approach debugging a complex issue?"},
+      {"id": "SE_E4", "text": "Explain a programming concept you've recently learned."},
+      {"id": "SE_E5", "text": "How do you stay updated with new technologies?"}
+    ],
+    "medium": [
+      {"id": "SE_M1", "text": "Describe a challenging technical problem you solved. What was your approach?"},
+      {"id": "SE_M2", "text": "How do you ensure code quality in your projects?"},
+      {"id": "SE_M3", "text": "Explain your experience with version control and collaboration tools."},
+      {"id": "SE_M4", "text": "Describe a time you had to learn a new technology quickly."},
+      {"id": "SE_M5", "text": "How do you handle technical debt and refactoring?"},
+      {"id": "SE_M6", "text": "Explain your understanding of software design patterns."}
+    ],
+    "hard": [
+      {"id": "SE_H1", "text": "Describe a system you designed that handled high traffic. What were the key decisions?"},
+      {"id": "SE_H2", "text": "How do you approach performance optimization in large-scale applications?"},
+      {"id": "SE_H3", "text": "Explain your experience with cloud infrastructure and deployment."},
+      {"id": "SE_H4", "text": "Describe a technical disagreement you resolved with your team."},
+      {"id": "SE_H5", "text": "How do you mentor junior developers and promote best practices?"}
+    ]
+  },
+  "Product Manager": {
+    "easy": [
+      {"id": "PM_E1", "text": "What does a Product Manager do on a daily basis?"},
+      {"id": "PM_E2", "text": "Describe a product feature you helped define."},
+      {"id": "PM_E3", "text": "How do you prioritize features?"}
+    ],
+    "medium": [
+      {"id": "PM_M1", "text": "Describe a time you had to make a product decision with limited data."},
+      {"id": "PM_M2", "text": "How do you communicate product requirements to engineering teams?"}
+    ],
+    "hard": [
+      {"id": "PM_H1", "text": "Describe a product that failed and what you learned."},
+      {"id": "PM_H2", "text": "How do you balance short-term features with long-term vision?"}
+    ]
+  },
+  "General": {
+    "easy": [
+      {"id": "GEN_E1", "text": "Tell me about yourself and your professional background."},
+      {"id": "GEN_E2", "text": "What are your greatest strengths?"},
+      {"id": "GEN_E3", "text": "Why are you interested in this position?"}
+    ],
+    "medium": [
+      {"id": "GEN_M1", "text": "Describe a challenging situation at work and how you handled it."},
+      {"id": "GEN_M2", "text": "How do you handle constructive criticism?"}
+    ],
+    "hard": [
+      {"id": "GEN_H1", "text": "Describe a time you failed and what you learned."},
+      {"id": "GEN_H2", "text": "How have you influenced positive change in your organization?"}
+    ]
+  }
+}
