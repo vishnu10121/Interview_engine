@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Camera Test</title></head>
+<body>
+<h1>Camera Test</h1>
+<video id="video" width="640" height="480" autoplay></video>
+<button id="startBtn">Start Camera</button>
+<script>
+document.getElementById('startBtn').onclick = async () => {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+    document.getElementById('video').srcObject = stream;
+    alert('Camera Working!');
+  } catch(err) {
+    alert('Error: ' + err.message);
+  }
+};
+</script>
+</body>
+</html>
