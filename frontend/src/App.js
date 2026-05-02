@@ -56,7 +56,7 @@ export default function App() {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token && !isMobile) {
-      fetch('http://localhost:5000/api/auth/me', {
+      fetch('https://interview-engine-1.onrender.com/api/auth/me', {
         headers: { 'Authorization': `Bearer ${token}` }
       })
       .then(res => res.json())
@@ -78,7 +78,7 @@ export default function App() {
     const token = params.get('token');
     if (token && !isMobile) {
       localStorage.setItem('token', token);
-      fetch('http://localhost:5000/api/auth/me', {
+      fetch('https://interview-engine-1.onrender.com/api/auth/me', {
         headers: { 'Authorization': `Bearer ${token}` }
       })
       .then(res => res.json())

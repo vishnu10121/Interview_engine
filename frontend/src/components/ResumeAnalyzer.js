@@ -58,7 +58,7 @@ const ResumeAnalyzer = ({ user }) => {
     
     // Now make the actual API call after all steps
     try {
-      const response = await fetch('http://localhost:5000/api/analyze-resume', {
+      const response = await fetch('https://interview-engine-1.onrender.com/api/analyze-resume', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`

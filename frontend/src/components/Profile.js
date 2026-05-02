@@ -11,7 +11,7 @@ export default function Profile({ user, onLogout, onBackToSetup }) {
   const fetchHistory = async () => {
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch('http://localhost:5000/api/auth/history', {
+      const res = await fetch('https://interview-engine-1.onrender.com/api/auth/history', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();

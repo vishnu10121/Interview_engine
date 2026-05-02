@@ -257,7 +257,7 @@ export default function Interview({ session, onComplete }) {
         const base64 = reader.result.split(',')[1];
         const token = localStorage.getItem('token');
         try {
-          await fetch(`http://localhost:5000/api/sessions/${session.session_id}/frames`, {
+          await fetch(`https://interview-engine-1.onrender.com/api/sessions/${session.session_id}/frames`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
             body: JSON.stringify({ frame: base64, timestamp: Date.now() / 1000, question_index: currentIndex })
@@ -312,7 +312,7 @@ export default function Interview({ session, onComplete }) {
     }));
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`http://localhost:5000/api/sessions/${session.session_id}/end`, {
+      const res = await fetch(`https://interview-engine-1.onrender.com/api/sessions/${session.session_id}/end`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ text_responses: textResponses })

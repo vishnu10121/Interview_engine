@@ -63,7 +63,7 @@ const WebcamStream = ({ sessionId, questionIndex, active }) => {
         const base64 = reader.result.split(',')[1];
         const token = localStorage.getItem('token');
         try {
-          const res = await fetch(`http://localhost:5000/api/sessions/${sessionId}/frames`, {
+          const res = await fetch(`https://interview-engine-1.onrender.com/api/sessions/${sessionId}/frames`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

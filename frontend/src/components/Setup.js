@@ -53,7 +53,7 @@ const Setup = ({ onSessionCreated, user, onGoToProfile, onLogout, onGoToDashboar
     
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch('http://localhost:5000/api/sessions', {
+      const res = await fetch('https://interview-engine-1.onrender.com/api/sessions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

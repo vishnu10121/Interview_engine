@@ -55,7 +55,7 @@ const PlacementPortal = ({ user }) => {
     const currentDSA = companyTests.google.dsa[0];
     
     try {
-      const response = await fetch('http://localhost:5000/api/run-cpp', {
+      const response = await fetch('https://interview-engine-1.onrender.com/api/run-cpp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
