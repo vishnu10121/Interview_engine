@@ -1,0 +1,5 @@
+src/components/Interview.js
+src/components/PlacementPortal.js
+src/components/ResumeAnalyzer.js
+*.js
+*.jsx
